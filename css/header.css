@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header .header__icon {
+  font-size: 20px;
+  margin-left: 20px; /* char에서 오른쪽 위 3개의 아이콘 사이의 간격 */
+  cursor: pointer; /* 아이콘에 마우스를 갖다 대면 커서가 화살표로 변함 */
+}
+
+.header .header__header-column {
+  display: flex; /*화살표와 Best Friend 문구를 일렬로 정렬해줌 */
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 22px; /*화살표의 크기 제어 */
+  margin-right: 20px; /*화살표 오른쪽으로 margin을줘서 Best Friend와 간격을 띄움 */
+}

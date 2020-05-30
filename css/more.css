@@ -1,0 +1,64 @@
+.more-body {
+  min-height: 180vh;
+}
+
+.more .more__btn-list,
+.more .more__suggestions-list {
+  margin: 30px 0px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center; /*justify-content: space-between을 사용하지
+   않음.(3개의 아이콘을 함께 있도록 하기 위해, 직접 비교해보기)  */
+  cursor: pointer; /*not-allowed, progress 등 다양한 커서가 있다.*/
+}
+
+.more__btn-list .more__btn,
+.more .suggestion {
+  /* 아이콘과 아이콘 타이틀을 나란히 2개의 컬럼으로 만듬.*/
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more__btn .more__btn-title {
+  /* 아이콘과 아이콘 타이틀 사이 마진을 줌. */
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.more .more__suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+}
+
+.more .more__title {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.suggestion .suggestion__title {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.suggestion .suggestion__icon {
+  background-color: #fce006;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.suggestion__icon i {
+  font-size: 28px;
+  color: #f7f7f7;
+}
+
+.more .more__btn-list .more__personality {
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&display=swap&subset=japanese");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
+
+* {
+  /*nav 바의 아이콘에서 ... 이 사라지는걸 방지해줌?*/
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    "Noto Sans JP";
+}
+
+a {
+  color: inherit; /* 클릭시에 아이콘의 색상이 바뀌는것을 제어함 inherit를 적용하면 모든 클릭 아이콘이 검은색으로 됨. inherit : get the color form the father(black) */
+  text-decoration: none; /* 글자에 링크나 데코를 지운다. */
+}
+
+@keyframes fadeIn {
+  /* 모든 페이지에서 엘리먼트들이 아래에서 위로 올라오는 효과를 줌 */
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}

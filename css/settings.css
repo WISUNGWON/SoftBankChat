@@ -1,0 +1,23 @@
+.settings .settings__sections {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 30px;
+}
+
+.settings__setting .settings__icon {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.settings__setting .settings__title {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.settings .settings__setting {
+  margin-bottom: 30px;
+}
+
+.settings .settings__setting:last-child {
+  /* setting의 마지막 자식 요소에는 bottom을 0을 주어 공간이 겹쳐서 늘어나지 않게 한다. */
+  margin-bottom: 0;
+}
